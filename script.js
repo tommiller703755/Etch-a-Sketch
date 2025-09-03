@@ -15,3 +15,12 @@ for (let i = 0; i < 16; i++) {
 }
 
 console.log("Grid creation code created.")
+
+// Detect when a grid cell is hovered over
+const cells = document.querySelectorAll(".cell");
+cells.forEach(cell => {
+    cell.addEventListener("mouseenter", function() {
+        console.log("cell activated.");
+        cell.style.color = "white";
+    })
+})
